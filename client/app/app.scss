@@ -36,7 +36,7 @@ app, .app {
 
 .title {
     font: 24px 'Arial';
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .detail .title {
@@ -45,10 +45,15 @@ app, .app {
 }
 
 .subtitle {
+    margin-top: 0px;
+    padding-top: 0px;
     font: 20px 'Arial';
     color: #6B6B6B;
 }
 
+#label {
+    color: #6B6B6B;
+}
 .control-label {
     font: 20px 'Arial';
     color: #6B6B6B;    
