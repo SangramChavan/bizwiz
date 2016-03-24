@@ -1,5 +1,6 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
+import rzslider from './scripts/rzslider';
 
 import Common from './common/common';
 import Components from './components/components';
@@ -8,6 +9,7 @@ import AppComponent from './app.component';
 import 'normalize.css';
 
 angular.module('app', [
+    rzslider.name,
     uiRouter,
     Common.name,
     Components.name
@@ -48,6 +50,20 @@ angular.module('app', [
         views: {
           master: { template: '<marketing-step-one-master></marketing-step-one-master>' },
           detail: { template: '<marketing-step-one-detail></marketing-step-one-detail>' }
+        }
+      })
+      .state('marketing-step-two', {
+        url: '/marketing-step-two',
+        views: {
+          master: { template: '<marketing-step-two-master></marketing-step-two-master>' },
+          detail: { template: '<marketing-step-two-detail></marketing-step-two-detail>' }
+        }
+      })
+      .state('marketing-step-three', {
+        url: '/marketing-step-three',
+        views: {
+          master: { template: '<marketing-step-three-master></marketing-step-three-master>' },
+          detail: { template: '<marketing-step-three-detail></marketing-step-three-detail>' }
         }
       });
 

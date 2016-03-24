@@ -1,7 +1,7 @@
 {
-  "name": "funchord",
+  "name": "bizwiz",
   "version": "0.0.1",
-  "description": "FunChord is a fun way to play your favorite songs",
+  "description": "Automatic financial modeling",
   "main": "index.js",
   "dependencies": {
     "angular": "^1.5.0",
@@ -51,12 +51,12 @@
     "test": "karma start"
   },
   "keywords": [
-    "funchord"
+    "bizwiz"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wix/funchord.git"
+    "url": "https://github.com/AdirAmsalem/bizwiz.git"
   },
-  "author": "Adir Amsalem <adira@wix.com>",
+  "author": "Adir Amsalem <adiramsalem@gmail.com>",
   "license": "Apache-2.0"
 }

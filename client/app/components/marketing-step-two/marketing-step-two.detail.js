@@ -7,12 +7,21 @@ class MarketingStepTwoDetailController {
   constructor(Storage) {
     'ngInject';
     this.Storage = Storage;
+
+    this.priceSliderOptions = {
+      floor: 0,
+      ceil: 1000
+    };
+
+    this.viralitySliderOptions = {
+      floor: 0,
+      ceil: 10
+    };
   }
 }
 
 export default {
   template,
   controller: MarketingStepTwoDetailController,
-  bindings: {
-  }
+  bindings: {}
 };

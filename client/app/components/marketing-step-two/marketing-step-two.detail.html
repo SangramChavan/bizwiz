@@ -1,14 +1,15 @@
 <div>
-  <h2 class="title">Choose your business model</h2>
+  <h3 class="subtitle">Average price per user</h3>
+  <rzslider rz-slider-model="$ctrl.Storage.data.marketingStepTwo.averagePricePerUser" rz-slider-options="$ctrl.priceSliderOptions"></rzslider>
 
-  <div class="center">
-    <div class="col-sm-3 business-model-option"
-         ng-repeat="option in $ctrl.Storage.options.businessModelOptions"
-         ng-click="$ctrl.chooseBusinessModel(option)"
-         ng-bind="option"
-         ng-class="{active: $ctrl.isChosenBusinessModel(option)}">
-    </div>
+  <h3 class="subtitle">Virality factor</h3>
+  <rzslider rz-slider-model="$ctrl.Storage.data.marketingStepTwo.viralityFactor" rz-slider-options="$ctrl.viralitySliderOptions"></rzslider>
+
+  <div>
+    <span>Expected monthly churn</span>
+    <input type="number" min="0" max="100" ng-model="$ctrl.Storage.data.marketingStepTwo.monthlyChurn">
+
   </div>
 
-  <a ui-sref="marketing-step-two" class="continue-button btn btn-primary">Continue</a>
+  <a ui-sref="marketing-step-three" class="continue-button btn btn-primary">Continue</a>
 </div>

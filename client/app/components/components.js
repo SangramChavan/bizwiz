@@ -15,6 +15,12 @@ import PilotDetail from './pilot/pilot.detail';
 import MarketingStepOneMaster from './marketing-step-one/marketing-step-one.master';
 import MarketingStepOneDetail from './marketing-step-one/marketing-step-one.detail';
 
+import MarketingStepTwoMaster from './marketing-step-two/marketing-step-two.master';
+import MarketingStepTwoDetail from './marketing-step-two/marketing-step-two.detail';
+
+import MarketingStepThreeMaster from './marketing-step-three/marketing-step-three.master';
+import MarketingStepThreeDetail from './marketing-step-three/marketing-step-three.detail';
+
 export default angular
   .module('app.components', [])
 
@@ -31,4 +37,10 @@ export default angular
   .component('pilotDetail', PilotDetail)
 
   .component('marketingStepOneMaster', MarketingStepOneMaster)
-  .component('marketingStepOneDetail', MarketingStepOneDetail);
+  .component('marketingStepOneDetail', MarketingStepOneDetail)
+
+  .component('marketingStepTwoMaster', MarketingStepTwoMaster)
+  .component('marketingStepTwoDetail', MarketingStepTwoDetail)
+
+  .component('marketingStepThreeMaster', MarketingStepThreeMaster)
+  .component('marketingStepThreeDetail', MarketingStepThreeDetail);

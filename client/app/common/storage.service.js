@@ -20,6 +20,18 @@ export default class Storage {
       },
       marketingStepOne: {
         businessModel: ''
+      },
+      marketingStepTwo: {
+        averagePricePerUser: 5,
+        viralityFactor: 3,
+        monthlyChurn: 0
+      },
+      marketingStepThree: {
+        monthlyBudget: 30000,
+        semSeo: 0,
+        ppcContent: 0,
+        eventsAndShows: 0,
+        pr: 0
       }
     };
     this.options = JSON.parse(dataJSON);
