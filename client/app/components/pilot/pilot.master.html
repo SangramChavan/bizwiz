@@ -9,7 +9,6 @@
     </select>
     <label><input type="radio" name="level" ng-model="$ctrl.formData.level" value="Junior"> Junior</label>
     <label><input type="radio" name="level" ng-model="$ctrl.formData.level" value="Senior"> Senior</label>
-    <input type="number" class="form-control" placeholder="Initial salary" ng-model="$ctrl.formData.initialSalary">
 
     <button type="submit">Add</button>
   </form>
@@ -21,7 +20,6 @@
         <span ng-bind="founder.title"></span>
         <span ng-bind="founder.fullName"></span>
         <span ng-bind="founder.roleType"></span>
-        <span>{{founder.initialSalary | currency:'$':0}}</span>
       </div>
     </div>
     <div class="employee-list">

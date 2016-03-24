@@ -1,6 +1,6 @@
 <div>
-  <h3 class="subtitle">Average price per user</h3>
-  <rzslider rz-slider-model="$ctrl.Storage.data.marketingStepTwo.averagePricePerUser" rz-slider-options="$ctrl.priceSliderOptions"></rzslider>
+  <h3 class="subtitle">Average Revenue Per User (Monthly)</h3>
+  <rzslider rz-slider-model="$ctrl.Storage.data.marketingStepTwo.arpu" rz-slider-options="$ctrl.arpuSliderOptions"></rzslider>
 
   <h3 class="subtitle">Virality factor</h3>
   <rzslider rz-slider-model="$ctrl.Storage.data.marketingStepTwo.viralityFactor" rz-slider-options="$ctrl.viralitySliderOptions"></rzslider>
@@ -8,7 +8,7 @@
   <div>
     <span>Expected monthly churn</span>
     <input type="number" min="0" max="100" ng-model="$ctrl.Storage.data.marketingStepTwo.monthlyChurn">
-
+    <span>%</span>
   </div>
 
   <a ui-sref="marketing-step-three" class="continue-button btn btn-primary">Continue</a>

@@ -45,6 +45,13 @@ angular.module('app', [
           detail: { template: '<pilot-detail></pilot-detail>' }
         }
       })
+      .state('growth', {
+        url: '/growth',
+        views: {
+          master: { template: '<growth-master></growth-master>' },
+          detail: { template: '<growth-detail></growth-detail>' }
+        }
+      })
       .state('marketing-step-one', {
         url: '/marketing-step-one',
         views: {
@@ -64,6 +71,13 @@ angular.module('app', [
         views: {
           master: { template: '<marketing-step-three-master></marketing-step-three-master>' },
           detail: { template: '<marketing-step-three-detail></marketing-step-three-detail>' }
+        }
+      })
+      .state('summary', {
+        url: '/summary',
+        views: {
+          master: { template: '<summary-master></summary-master>' },
+          detail: { template: '<summary-detail></summary-detail>' }
         }
       });
 

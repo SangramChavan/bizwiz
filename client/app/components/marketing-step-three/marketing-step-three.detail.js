@@ -14,7 +14,6 @@ class MarketingStepThreeDetailController {
   }
 
   drawPie() {
-    console.log(this.Storage.data.marketingStepThree);
     const chartKeyNames = {
       semSeo: 'SEM & SEO',
       ppcContent: 'PPC & Content Campaign',

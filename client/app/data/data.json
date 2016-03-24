@@ -1,5 +1,5 @@
 {
   "businessFocusOptions": ["Mobile App", "Enterprise Software", "Website"],
-  "roleTypes": ["Technology", "Operations", "Biz Dev", "Marketing", "Product / Design", "General management"],
+  "roleTypes": ["Research & Development", "Marketing & Sales", "General & Administration"],
   "businessModelOptions": ["SaaS / Subscription", "Lead Generation", "Advertizing", "Freemium"]
 }

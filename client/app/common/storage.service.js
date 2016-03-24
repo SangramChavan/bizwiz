@@ -6,32 +6,69 @@ export default class Storage {
     'ngInject';
     this.data = {
       businessFocus: {
-        type: ''
+        type: 'Mobile App'
       },
       timeline: {
         mvp: 4,
         pilot: 6
       },
       mvp: {
-        founderList: []
+        founderList: [
+          {
+            fullName: 'Yossi',
+            title: 'CEO',
+            roleType: 'General & Administration',
+            initialSalary: 2000,
+            percentInCompany: 50
+          },
+          {
+            fullName: 'Odelia',
+            title: 'Design',
+            roleType: 'Research & Development',
+            initialSalary: 2000,
+            percentInCompany: 50
+          }
+        ]
       },
       pilot: {
-        employeeList: []
+        employeeList: [
+          {
+            roleType: 'Research & Development',
+            level: 'Senior'
+          },
+          {
+            roleType: 'Marketing & Sales',
+            level: 'Junior'
+          }
+        ]
+      },
+      growth: {
+        juniorGA: 2,
+        seniorGA: 2,
+        juniorRnD: 15,
+        seniorRnD: 10,
+        juniorMS: 5,
+        seniorMS: 5
       },
       marketingStepOne: {
-        businessModel: ''
+        businessModel: 'Freemium'
       },
       marketingStepTwo: {
-        averagePricePerUser: 5,
-        viralityFactor: 3,
-        monthlyChurn: 0
+        arpu: 1.3,
+        viralityFactor: 25,
+        monthlyChurn: 0.05
       },
       marketingStepThree: {
         monthlyBudget: 30000,
-        semSeo: 0,
-        ppcContent: 0,
-        eventsAndShows: 0,
-        pr: 0
+        semSeo: 25,
+        ppcContent: 25,
+        eventsAndShows: 20,
+        pr: 30
+      },
+      summary: {
+        adjustBudget: 0,
+        adjustDevelopmentTime: 0,
+        adjustSalaries: 0
       }
     };
     this.options = JSON.parse(dataJSON);

@@ -12,6 +12,9 @@ import MvpDetail from './mvp/mvp.detail';
 import PilotMaster from './pilot/pilot.master';
 import PilotDetail from './pilot/pilot.detail';
 
+import GrowthMaster from './growth/growth.master';
+import GrowthDetail from './growth/growth.detail';
+
 import MarketingStepOneMaster from './marketing-step-one/marketing-step-one.master';
 import MarketingStepOneDetail from './marketing-step-one/marketing-step-one.detail';
 
@@ -20,6 +23,9 @@ import MarketingStepTwoDetail from './marketing-step-two/marketing-step-two.deta
 
 import MarketingStepThreeMaster from './marketing-step-three/marketing-step-three.master';
 import MarketingStepThreeDetail from './marketing-step-three/marketing-step-three.detail';
+
+import SummaryMaster from './summary/summary.master';
+import SummaryDetail from './summary/summary.detail';
 
 export default angular
   .module('app.components', [])
@@ -36,6 +42,9 @@ export default angular
   .component('pilotMaster', PilotMaster)
   .component('pilotDetail', PilotDetail)
 
+  .component('growthMaster', GrowthMaster)
+  .component('growthDetail', GrowthDetail)
+
   .component('marketingStepOneMaster', MarketingStepOneMaster)
   .component('marketingStepOneDetail', MarketingStepOneDetail)
 
@@ -43,4 +52,7 @@ export default angular
   .component('marketingStepTwoDetail', MarketingStepTwoDetail)
 
   .component('marketingStepThreeMaster', MarketingStepThreeMaster)
-  .component('marketingStepThreeDetail', MarketingStepThreeDetail);
+  .component('marketingStepThreeDetail', MarketingStepThreeDetail)
+
+  .component('summaryMaster', SummaryMaster)
+  .component('summaryDetail', SummaryDetail);

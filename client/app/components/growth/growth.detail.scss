@@ -1,0 +1,75 @@
+growth-detail {
+
+    .timeline-row {
+        clear: both;
+        width: 100%;
+    }
+
+    .timeline-years {
+        width: 88%;
+        float: left;
+    }
+
+    .timeline-year {
+        width: 20%;
+        float: left;
+        display: inline-block;
+        color: #6B6B6B;
+        font-family: 12px Arial;
+        font-weight: bold;
+        padding-bottom: 20px;
+
+        &:nth-child(5) {
+            width: 18%;
+        }
+
+        &:last-child {
+            text-align: right;
+            width: 2%;
+        }
+    }
+
+    .timeline-label {
+        width: 12%;
+        float: left;
+        font-size: 1.1rem;
+        font-family: 12px Arial;
+        font-weight: bold;
+        color: #6B6B6B;
+        vertical-align: center;
+    }
+
+    .timeline-bar {
+        height: 35px;
+        width: 88%;
+        float: left;
+        margin: 2px 0;
+        overflow: hidden;
+        background-color: rgba(240, 240, 240, 0.3);
+
+        .timeline-item {
+            display: inline-block;
+            height: 100%;
+            float: left;
+            transition: width 300ms ease;
+        }
+
+        &.mvp {
+            .timeline-item:nth-child(1) {
+                background: red;
+            }
+        }
+
+        &.pilot {
+            .timeline-item:nth-child(2) {
+                background: blue;
+            }
+        }
+
+        &.scale {
+            .timeline-item:nth-child(3) {
+                background: green;
+            }
+        }
+    }
+}

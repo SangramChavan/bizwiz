@@ -8,14 +8,14 @@ class MarketingStepTwoDetailController {
     'ngInject';
     this.Storage = Storage;
 
-    this.priceSliderOptions = {
+    this.arpuSliderOptions = {
       floor: 0,
-      ceil: 1000
+      ceil: 100
     };
 
     this.viralitySliderOptions = {
       floor: 0,
-      ceil: 10
+      ceil: 500
     };
   }
 }
