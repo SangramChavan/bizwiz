@@ -1,0 +1,17 @@
+<div>
+  <h2 class="title">Create timeline</h2>
+
+  <form class="form">
+    <div class="form-group">
+      <label class="control-label">How long will the MVP stage be?</label>
+      <input type="number" min="0" max="60" class="form-control" placeholder="# of months"
+             ng-model="$ctrl.Storage.data.timeline.mvp">
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">How long will you plan to Pilot?</label>
+      <input type="number" min="0" max="60" class="form-control" placeholder="# of months"
+             ng-model="$ctrl.Storage.data.timeline.pilot">
+    </div>
+  </form>
+</div>

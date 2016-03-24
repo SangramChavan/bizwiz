@@ -1,0 +1,14 @@
+<div>
+  <h2 class="title">Choose your business focus</h2>
+
+  <div class="center">
+    <div class="col-sm-3 business-focus-option"
+         ng-repeat="focusOption in $ctrl.Storage.options.businessFocusOptions"
+         ng-click="$ctrl.chooseBusinessFocus(focusOption)"
+         ng-bind="focusOption"
+         ng-class="{active: $ctrl.isChosenBusinessFocus(focusOption)}">
+    </div>
+  </div>
+
+  <a ui-sref="timeline" class="continue-button btn btn-primary">Continue</a>
+</div>

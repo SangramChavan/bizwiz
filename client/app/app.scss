@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+app, .app {
+    height: 100%;
+}
+
+.master {
+    background: #19fffd;
+    height: 100%;
+    padding: 80px 20px;
+}
+
+.detail {
+    background: #c228dd;
+    height: 100%;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.form-control {
+    margin: 25px 0;
+    width: 80%;
+}
+
+.center {
+    text-align: center;
+}
+
+.continue-button {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+}

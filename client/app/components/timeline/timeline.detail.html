@@ -1,0 +1,39 @@
+<div>
+  <div class="timeline-row">
+    <span class="timeline-label">Year</span>
+    <div class="timeline-years">
+      <div class="timeline-year">0</div>
+      <div class="timeline-year">1</div>
+      <div class="timeline-year">2</div>
+      <div class="timeline-year">3</div>
+      <div class="timeline-year">4</div>
+      <div class="timeline-year">5</div>
+    </div>
+  </div>
+  <div class="timeline-row">
+    <span class="timeline-label">MVP</span>
+    <div class="timeline-bar mvp">
+      <div class="timeline-item mvp" style="width: {{$ctrl.calcTimelineWidth($ctrl.Storage.data.timeline.mvp)}}%"></div>
+      <div class="timeline-item pilot" style="width: {{$ctrl.calcTimelineWidth($ctrl.Storage.data.timeline.pilot)}}%"></div>
+      <div class="timeline-item scale" style="width: {{$ctrl.calcTimelineWidth(60 - $ctrl.Storage.data.timeline.mvp - $ctrl.Storage.data.timeline.pilot)}}%"></div>
+    </div>
+  </div>
+  <div class="timeline-row">
+    <span class="timeline-label">Pilot</span>
+    <div class="timeline-bar pilot">
+      <div class="timeline-item mvp" style="width: {{$ctrl.calcTimelineWidth($ctrl.Storage.data.timeline.mvp)}}%"></div>
+      <div class="timeline-item pilot" style="width: {{$ctrl.calcTimelineWidth($ctrl.Storage.data.timeline.pilot)}}%"></div>
+      <div class="timeline-item scale" style="width: {{$ctrl.calcTimelineWidth(60 - $ctrl.Storage.data.timeline.mvp - $ctrl.Storage.data.timeline.pilot)}}%"></div>
+    </div>
+  </div>
+  <div class="timeline-row">
+    <span class="timeline-label">Scale</span>
+    <div class="timeline-bar scale">
+      <div class="timeline-item mvp" style="width: {{$ctrl.calcTimelineWidth($ctrl.Storage.data.timeline.mvp)}}%"></div>
+      <div class="timeline-item pilot" style="width: {{$ctrl.calcTimelineWidth($ctrl.Storage.data.timeline.pilot)}}%"></div>
+      <div class="timeline-item scale" style="width: {{$ctrl.calcTimelineWidth(60 - $ctrl.Storage.data.timeline.mvp - $ctrl.Storage.data.timeline.pilot)}}%"></div>
+    </div>
+  </div>
+
+  <a ui-sref="mvp" class="continue-button btn btn-primary">Continue</a>
+</div>
