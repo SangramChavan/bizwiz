@@ -14,6 +14,10 @@ timeline-detail {
         width: 20%;
         float: left;
         display: inline-block;
+        color: #6B6B6B;
+        font-family: 12px Arial;
+        font-weight: bold;
+        padding-bottom: 20px;
 
         &:nth-child(5) {
             width: 18%;
@@ -29,10 +33,14 @@ timeline-detail {
         width: 12%;
         float: left;
         font-size: 1.1rem;
+        font-family: 12px Arial;
+        font-weight: bold;
+        color: #6B6B6B;
+        vertical-align: center;
     }
 
     .timeline-bar {
-        height: 25px;
+        height: 35px;
         width: 88%;
         float: left;
         margin: 2px 0;
