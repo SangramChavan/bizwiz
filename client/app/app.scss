@@ -92,3 +92,14 @@ app, .app {
     background: red;
     display: inline-block;
 }
+
+rzslider .rz-bar {
+    background: #B8BCC5;
+}
+
+.rz-pointer {
+
+    &:focus {
+        outline: 0;
+    }
+}
