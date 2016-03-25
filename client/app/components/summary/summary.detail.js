@@ -26,7 +26,7 @@ class SummaryDetailController {
     const seedUsers = 500;
     const pricing = this.Storage.data.marketingStepTwo.arpu;
     const growth = this.Storage.data.marketingStepTwo.arpu;
-    const churn = this.Storage.data.marketingStepTwo.monthlyChurn;
+    const churn = this.Storage.data.marketingStepTwo.monthlyChurn / 100;
     const virality = this.Storage.data.marketingStepTwo.viralityFactor / 100;
     const hr = _.sum(allMarketingEmployees.map(employee => employee.initialSalary));
     const budget = this.Storage.data.marketingStepThree.monthlyBudget;

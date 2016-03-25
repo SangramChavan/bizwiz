@@ -6,7 +6,11 @@ export default class Storage {
     'ngInject';
     this.data = {
       businessFocus: {
-        type: 'Mobile App'
+        type: 'Mobile App',
+        companyName: 'Karma by Aleph',
+        country: 'Israel',
+        state: '',
+        city: 'Tel-Aviv'
       },
       timeline: {
         mvp: 4,
@@ -58,7 +62,7 @@ export default class Storage {
       marketingStepTwo: {
         arpu: 1.3,
         viralityFactor: 25,
-        monthlyChurn: 0.05
+        monthlyChurn: 5
       },
       marketingStepThree: {
         monthlyBudget: 30000,
