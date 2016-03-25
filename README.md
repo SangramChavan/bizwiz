@@ -1,11 +1,15 @@
-# FunChord
+# BizwiZ
 
-FunChord is a fun way to play your favorite songs. 
+Automatic and Intelligent Financial Models for Startups.
 
-Most people call it "Simon for Music Lovers".
+Helping you create interactive financial models. Online. In minutes. 
 
-Always wanted to be a Rock Star? Now you can! 
 
-### Let's play!
+### Presentation
 
-http://wix.github.io/funchord
+http://www.slideshare.net/adiramsalem1/bizwiz-60020494
+
+
+### Demo
+
+http://adiramsalem.github.io/bizwiz
