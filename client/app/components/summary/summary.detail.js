@@ -67,7 +67,7 @@ class SummaryDetailController {
   }
 
   drawSummaryChart() {
-    const data = this.getChartData();
+    this.data = this.getChartData();
 
     $('.summary-pnl-chart').highcharts({
       chart: {
@@ -96,15 +96,15 @@ class SummaryDetailController {
         {
           type: 'column',
           name: 'Expenses',
-          data: this.Month2Year.convert(data.team.expenses).map(item => Number((item / 1e6).toFixed(2)))
+          data: this.Month2Year.convert(this.data.team.expenses).map(item => Number((item / 1e6).toFixed(2)))
         }, {
           type: 'column',
           name: 'Revenue',
-          data: this.Month2Year.convert(data.scaleMeUp.Revenue).map(item => Number((item / 1e6).toFixed(2)))
+          data: this.Month2Year.convert(this.data.scaleMeUp.Revenue).map(item => Number((item / 1e6).toFixed(2)))
         }, {
           type: 'spline',
           name: 'Profit',
-          data: this.Month2Year.convert(data.profit).map(item => Number((item / 1e6).toFixed(2))),
+          data: this.Month2Year.convert(this.data.profit).map(item => Number((item / 1e6).toFixed(2))),
           marker: {
             lineWidth: 2,
             lineColor: '#eee',

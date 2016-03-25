@@ -23,14 +23,14 @@ export default class Storage {
             title: 'CEO',
             roleType: 'General & Administration',
             initialSalary: 2000,
-            percentInCompany: 50
+            percentInCompany: 33
           },
           {
             fullName: 'Odelia',
             title: 'Design',
             roleType: 'Research & Development',
             initialSalary: 2000,
-            percentInCompany: 50
+            percentInCompany: 33
           }
         ]
       },
@@ -80,6 +80,6 @@ export default class Storage {
 
     this.options = JSON.parse(dataJSON);
 
-    this.chartColors = ['#00cc00', '#2fbfe0', '#6633ff', '#33597d'];
+    this.chartColors = ['#00cc00', '#2fbfe0', '#6633ff', '#33597d', '#ff0000'];
   }
 }

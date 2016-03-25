@@ -2,4 +2,16 @@
   <h2 class="title">Business Summary - 5 year pro-forma profit & loss ($Millions)</h2>
 
   <div class="summary-pnl-chart"></div>
+
+  <div class="metrics">
+    <h2 class="title">Metrics</h2>
+    <div class="subtitle" style="margin-bottom: 10px;">
+      <span class="metric-title">Customer Acquisition Cost (CAC):</span>
+      <span class="cac">${{$ctrl.data.scaleMeUp.convertedCAC | number:'2'}}</span>
+    </div>
+    <div class="subtitle">
+      <span class="metric-title">Customer Lifetime Value (LTV):</span>
+      <span class="ltv">${{$ctrl.data.scaleMeUp.LTV | number:'2'}}</span>
+    </div>
+  </div>
 </div>
