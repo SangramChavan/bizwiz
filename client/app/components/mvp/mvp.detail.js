@@ -23,10 +23,13 @@ class MvpDetailController {
       };
     });
 
-    seriesData.push({
-      name: 'Unallocated',
-      y: 100 - (seriesData.map(data => data.y).reduce((curr, next) => curr + next, 0))
-    });
+    const unallocated = (seriesData.map(data => data.y).reduce((curr, next) => curr - next, 100));
+    if (unallocated > 0) {
+      seriesData.push({
+        name: 'Unallocated',
+        y: unallocated
+      });
+    }
 
     $('.mvp-founders-pie').highcharts({
       chart: {
