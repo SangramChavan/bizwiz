@@ -14,9 +14,11 @@ class MvpDetailController {
   }
 
   drawFoundersPie() {
-    const seriesData = this.Storage.data.mvp.founderList.map(founder => {
+    const seriesData = this.Storage.data.mvp.founderList.map((founder, index) => {
       return {
-        name: founder.fullName,
+        name: founder.title,
+        roleType: founder.roleType,
+        color: this.Storage.chartColors[index],
         y: founder.percentInCompany
       };
     });
@@ -35,7 +37,7 @@ class MvpDetailController {
         text: ''
       },
       tooltip: {
-        pointFormat: '<b>{point.percentage:.1f}%</b>'
+        pointFormat: '<b >{point.percentage:.1f}%</b>'
       },
       plotOptions: {
         pie: {
@@ -43,7 +45,7 @@ class MvpDetailController {
           cursor: 'pointer',
           dataLabels: {
             enabled: true,
-            format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+            format: '<span style="font-size: 16px;">{point.name}</span><br><span style="font-size: 15px; color: #888">{point.roleType}</span>',
             style: {
               color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
             }

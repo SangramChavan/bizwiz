@@ -11,6 +11,7 @@ class PilotMasterController {
   }
 
   onSubmit(data) {
+    data.initialSalary = this.Storage.options[data.level === 'Junior' ? 'juniorSalaries' : 'seniorSalaries'][this.Storage.options.roleTypes.indexOf(data.roleType)];
     this.Storage.data.pilot.employeeList.push(data);
     this.formData = {};
   }

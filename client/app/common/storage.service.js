@@ -34,11 +34,13 @@ export default class Storage {
         employeeList: [
           {
             roleType: 'Research & Development',
-            level: 'Senior'
+            level: 'Senior',
+            initialSalary: 10000
           },
           {
             roleType: 'Marketing & Sales',
-            level: 'Junior'
+            level: 'Junior',
+            initialSalary: 3000
           }
         ]
       },
@@ -71,6 +73,9 @@ export default class Storage {
         adjustSalaries: 0
       }
     };
+
     this.options = JSON.parse(dataJSON);
+
+    this.chartColors = ['#00cc00', '#2fbfe0', '#6633ff', '#33597d'];
   }
 }

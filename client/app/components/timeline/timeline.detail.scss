@@ -3,6 +3,11 @@ timeline-detail {
     .timeline-row {
         clear: both;
         width: 100%;
+
+        &:first-child {
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
     }
 
     .timeline-years {
@@ -15,9 +20,9 @@ timeline-detail {
         float: left;
         display: inline-block;
         color: #6B6B6B;
-        font-family: 12px Arial;
+        font: 16px Arial;
         font-weight: bold;
-        padding-bottom: 20px;
+        line-height: 30px;
 
         &:nth-child(5) {
             width: 18%;
@@ -32,11 +37,11 @@ timeline-detail {
     .timeline-label {
         width: 12%;
         float: left;
-        font-size: 1.1rem;
-        font-family: 12px Arial;
+        font: 16px Arial;
         font-weight: bold;
         color: #6B6B6B;
-        vertical-align: center;
+        text-align: center;
+        line-height: 30px;
     }
 
     .timeline-bar {
@@ -56,19 +61,19 @@ timeline-detail {
 
         &.mvp {
             .timeline-item:nth-child(1) {
-                background: red;
+                background: #ff33ff;
             }
         }
 
         &.pilot {
             .timeline-item:nth-child(2) {
-                background: blue;
+                background: #990099;
             }
         }
 
         &.scale {
             .timeline-item:nth-child(3) {
-                background: green;
+                background: #00cc00;
             }
         }
     }

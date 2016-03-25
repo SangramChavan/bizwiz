@@ -3,31 +3,39 @@
   <h3 class="subtitle">Do you want to hire more people?</h3>
 
   <form class="form" ng-submit="$ctrl.onSubmit($ctrl.formData)">
-    <select ng-model="$ctrl.formData.roleType"
+    <select class="form-control"
+            ng-model="$ctrl.formData.roleType"
             ng-options="role as role for role in $ctrl.Storage.options.roleTypes">
       <option value="">Area of expertise</option>
     </select>
     <label><input type="radio" name="level" ng-model="$ctrl.formData.level" value="Junior"> Junior</label>
     <label><input type="radio" name="level" ng-model="$ctrl.formData.level" value="Senior"> Senior</label>
 
-    <button type="submit">Add</button>
+    <button type="submit" class="btn btn-primary add-button pull-right">Add</button>
   </form>
 
   <div class="all-employees-list">
     <div class="founder-list">
-      <h3>Founders</h3>
-      <div ng-repeat="founder in $ctrl.Storage.data.mvp.founderList">
-        <span ng-bind="founder.title"></span>
-        <span ng-bind="founder.fullName"></span>
-        <span ng-bind="founder.roleType"></span>
+      <h2 class="title">Founders</h2>
+      <div ng-repeat="founder in $ctrl.Storage.data.mvp.founderList" class="founder-item">
+        <span class="color-indicator" style="background-color: {{$ctrl.Storage.chartColors[$index]}}"></span>
+        <div class="founder-details">
+          <span class="founder-title" ng-bind="founder.title"></span>
+          <span class="founder-fullname" ng-bind="founder.fullName"></span>
+          <span class="founder-roletype" ng-bind="founder.roleType"></span>
+          <span class="founder-percent">{{founder.percentInCompany}}%</span>
+        </div>
       </div>
     </div>
     <div class="employee-list">
-      <h3>Employees</h3>
-      <div ng-repeat="employee in $ctrl.Storage.data.pilot.employeeList">
-        <span ng-bind="employee.roleType"></span>
-        <span ng-bind="employee.level"></span>
-        <span>{{employee.initialSalary | currency:'$':0}}</span>
+      <h2 class="title">Employees</h2>
+      <div ng-repeat="employee in $ctrl.Storage.data.pilot.employeeList" class="employee-item">
+        <span class="color-indicator" style="background-color: {{$ctrl.Storage.chartColors[$index + $ctrl.Storage.data.mvp.founderList.length]}}"></span>
+        <div class="employee-details">
+          <span class="employee-roletype" ng-bind="employee.roleType"></span>
+          <span class="employee-level" ng-bind="employee.level"></span>
+          <span class="employee-salary">{{employee.initialSalary | currency:'$':0}}</span>
+        </div>
       </div>
     </div>
   </div>

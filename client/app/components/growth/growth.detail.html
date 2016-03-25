@@ -1,4 +1,40 @@
 <div>
+  <form class="form">
+    <div class="form-section">
+      <h2 class="title">Starting with G&A (General Administration)</h2>
+      <div class="form-group">
+        <label class="control-label">How many junior positions?</label>
+        <input type="number" min="0" max="60" class="form-control" ng-model="$ctrl.Storage.data.growth.juniorGA">
+      </div>
+      <div class="form-group">
+        <label class="control-label">How many senior positions?</label>
+        <input type="number" min="0" max="60" class="form-control" ng-model="$ctrl.Storage.data.growth.seniorGA">
+      </div>
+    </div>
+    <div class="form-section">
+      <h2 class="title">Starting with R&D (Research & Development)</h2>
+      <div class="form-group">
+        <label class="control-label">How many junior positions?</label>
+        <input type="number" min="0" max="60" class="form-control" ng-model="$ctrl.Storage.data.growth.juniorRnD">
+      </div>
+      <div class="form-group">
+        <label class="control-label">How many senior positions?</label>
+        <input type="number" min="0" max="60" class="form-control" ng-model="$ctrl.Storage.data.growth.seniorRnD">
+      </div>
+    </div>
 
-  <a ui-sref="marketing-step-one" class="continue-button btn btn-primary">Continue</a>
+    <div class="form-section">
+      <h2 class="title">Starting with M&S (Marketing & Sales)</h2>
+      <div class="form-group">
+        <label class="control-label">How many junior positions?</label>
+        <input type="number" min="0" max="60" class="form-control" ng-model="$ctrl.Storage.data.growth.juniorMS">
+      </div>
+      <div class="form-group">
+        <label class="control-label">How many senior positions?</label>
+        <input type="number" min="0" max="60" class="form-control" ng-model="$ctrl.Storage.data.growth.seniorMS">
+      </div>
+    </div>
+  </form>
+
+  <a ui-sref="marketing-step-one" class="continue-button btn btn-primary">Continue to Business Model</a>
 </div>

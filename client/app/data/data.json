@@ -1,5 +1,7 @@
 {
-  "businessFocusOptions": ["Mobile App", "Enterprise Software", "Website"],
+  "businessFocusOptions": ["Mobile App", "Enterprise Software", "Website / Social"],
   "roleTypes": ["Research & Development", "Marketing & Sales", "General & Administration"],
-  "businessModelOptions": ["SaaS / Subscription", "Lead Generation", "Advertizing", "Freemium"]
+  "businessModelOptions": ["SaaS / Subscription", "Lead Generation", "Advertising", "Freemium"],
+  "juniorSalaries": [6500, 3000, 6500],
+  "seniorSalaries": [10000, 8000, 10000]
 }

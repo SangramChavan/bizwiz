@@ -15,9 +15,11 @@ class PilotDetailController {
 
   drawPie() {
     const allEmployeesList = this.Storage.data.mvp.founderList.concat(this.Storage.data.pilot.employeeList);
-    const seriesData = allEmployeesList.map(employee => {
+    const seriesData = allEmployeesList.map((employee, index) => {
       return {
-        name: employee.roleType,
+        name: employee.title || 'Employee',
+        roleType: employee.roleType,
+        color: this.Storage.chartColors[index],
         y: employee.initialSalary
       };
     });
@@ -39,7 +41,7 @@ class PilotDetailController {
           cursor: 'pointer',
           dataLabels: {
             enabled: true,
-            format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+            format: '<span style="font-size: 16px;">{point.name}</span><br><span style="font-size: 15px; color: #888">{point.roleType}</span><br><span style="font-size: 16px;">${point.y:0f}</span>',
             style: {
               color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
             }

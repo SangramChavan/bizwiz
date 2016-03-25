@@ -37,8 +37,7 @@ let paths = {
     path.join(root, 'index.html')
   ],
   entry: path.join(__dirname, root, 'app/app.js'),
-  output: root,
-  blankTemplates: path.join(__dirname, 'generator', 'component/**/*.**')
+  output: root
 };
 
 // use webpack.config.js to build modules
@@ -59,6 +58,12 @@ gulp.task('webpack', (cb) => {
 
     cb();
   });
+});
+
+gulp.task('copy', () => {
+  return gulp
+    .src(`${root}/app/images/*`)
+    .pipe(gulp.dest('dist/app/images'));
 });
 
 gulp.task('serve', () => {

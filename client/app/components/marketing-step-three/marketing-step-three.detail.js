@@ -23,9 +23,10 @@ class MarketingStepThreeDetailController {
 
     const seriesData = Object.keys(this.Storage.data.marketingStepThree)
       .filter(key => !!chartKeyNames[key])
-      .map(key => {
+      .map((key, index) => {
         return {
           name: chartKeyNames[key],
+          color: this.Storage.chartColors[index],
           y: this.Storage.data.marketingStepThree[key]
         };
       });
@@ -55,7 +56,7 @@ class MarketingStepThreeDetailController {
           cursor: 'pointer',
           dataLabels: {
             enabled: true,
-            format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+            format: '<span style="font-size: 16px;">{point.name}</span><br><span style="font-size: 15px; color: #888">{point.roleType}</span>',
             style: {
               color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
             }

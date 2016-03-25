@@ -1,8 +1,94 @@
 pilot-master {
 
+    form {
+        overflow: hidden;
+    }
+
     .form-control {
-        width: 40%;
+        width: 45%;
         display: inline-block;
+        margin-bottom: 0;
+
+        &:first-of-type {
+            margin-right: 6%;
+        }
+    }
+
+    .subtitle {
+        font: 20px 'Arial';
+    }
+
+    .percent-in-company {
+
+        .subtitle {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .percent-title {
+            margin-right: 48px;
+        }
+
+        .form-control {
+            width: 80px;
+            margin-right: 1%;
+        }
+
+        .suffix {
+            display: inline-block;
+        }
+    }
+
+    .add-button {
+        background-color: #3ABFDE;
+        border-radius: 20px;
+        border: none;
+        font: 16px Arial;
+        font-weight: bold;
+        margin-right: 18px;
+        margin-top: 20px;
+    }
+
+    .founder-list,
+    .employee-list {
+        color: #6B6B6B;
+        margin-top: 20px;
+        border-top: 1px solid #6B6B6B;
+        padding-top: 30px;
+        width: 88%;
+    }
+
+    .founder-item,
+    .employee-item {
+        margin: 20px 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .color-indicator {
+            vertical-align: top;
+        }
+
+        .founder-details,
+        .employee-details {
+            display: inline-block;
+
+            & > span {
+                display: block;
+            }
+        }
+    }
+
+    .founder-fullname,
+    .employee-fullname {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .founder-percent,
+    .employee-salary {
+        font-weight: bold;
     }
 
     .all-employees-list {
@@ -22,8 +108,8 @@ pilot-master {
     }
 
     label {
-        padding-left: 20px;
-        font: 14px 'Arial';
+        padding-left: 10px;
+        font: 16px 'Arial';
         color: #6B6B6B;
     }
 }

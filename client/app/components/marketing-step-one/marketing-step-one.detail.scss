@@ -1,19 +1,16 @@
 marketing-step-one-detail {
 
     .business-model-option {
-        background: #19fffd;
         margin: 0 3% 3%;
-        height: 150px;
-        font-size: 1.7rem;
-        padding: 38px;
+        width: 18%;
+        font-size: 1.4rem;
         cursor: pointer;
+        font-weight: 400;
+        display: inline-block;
 
-        &:hover {
-            background: #72fffd;
-        }
-
-        &.active {
-            background: #f6ff88;
+        img {
+            margin: 13px auto;
+            display: block;
         }
     }
 }

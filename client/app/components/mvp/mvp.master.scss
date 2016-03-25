@@ -1,10 +1,88 @@
 mvp-master {
+
+    form {
+        overflow: hidden;
+    }
+
     .form-control {
-        width: 40%;
+        width: 45%;
         display: inline-block;
+        margin-bottom: 0;
+
+        &:first-of-type {
+            margin-right: 6%;
+        }
     }
 
     .subtitle {
     	font: 20px 'Arial';
+    }
+
+    .percent-in-company {
+
+        .subtitle {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .percent-title {
+            margin-right: 48px;
+        }
+
+        .form-control {
+            width: 80px;
+            margin-right: 1%;
+        }
+
+        .suffix {
+            display: inline-block;
+        }
+    }
+
+    .add-button {
+        background-color: #3ABFDE;
+        border-radius: 20px;
+        border: none;
+        font: 16px Arial;
+        font-weight: bold;
+        margin-right: 50px;
+        margin-top: 20px;
+    }
+
+    .founder-list {
+        color: #6B6B6B;
+        margin-top: 20px;
+        border-top: 1px solid #6B6B6B;
+        padding-top: 30px;
+        width: 88%;
+    }
+
+    .founder-item {
+        margin: 20px 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .color-indicator {
+            vertical-align: top;
+        }
+
+        .founder-details {
+            display: inline-block;
+
+            & > span {
+                display: block;
+            }
+        }
+    }
+
+    .founder-fullname {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .founder-percent {
+        font-weight: bold;
     }
 }

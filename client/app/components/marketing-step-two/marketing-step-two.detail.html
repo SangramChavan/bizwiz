@@ -1,15 +1,25 @@
 <div>
-  <h3 class="subtitle">Average Revenue Per User (Monthly)</h3>
-  <rzslider rz-slider-model="$ctrl.Storage.data.marketingStepTwo.arpu" rz-slider-options="$ctrl.arpuSliderOptions"></rzslider>
+  <h2 class="title">Average Revenue Per User (Monthly)</h2>
+  <rzslider rz-slider-model="$ctrl.Storage.data.marketingStepTwo.arpu"
+            rz-slider-options="$ctrl.arpuSliderOptions"></rzslider>
+  <span class="subtitle pull-left">Focus on growth</span>
+  <span class="subtitle pull-right">Focus on revenue</span>
 
-  <h3 class="subtitle">Virality factor</h3>
-  <rzslider rz-slider-model="$ctrl.Storage.data.marketingStepTwo.viralityFactor" rz-slider-options="$ctrl.viralitySliderOptions"></rzslider>
+  <div class="section">
+    <h2 class="title">Virality factor</h2>
+    <rzslider rz-slider-model="$ctrl.Storage.data.marketingStepTwo.viralityFactor"
+              rz-slider-options="$ctrl.viralitySliderOptions"></rzslider>
+  </div>
 
-  <div>
-    <span>Expected monthly churn</span>
-    <input type="number" min="0" max="100" ng-model="$ctrl.Storage.data.marketingStepTwo.monthlyChurn">
+  <hr style="background-color: #2FBFE0;height: 1px; margin-top: 50px">
+
+  <div class="section subtitle" style="margin-top: 50px;">
+    <span class="subtitle" >Expected monthly churn</span>
+    <input type="number" min="0" max="100" step="0.05"
+           style="font-size: 16px; width: 60px;"
+           ng-model="$ctrl.Storage.data.marketingStepTwo.monthlyChurn">
     <span>%</span>
   </div>
 
-  <a ui-sref="marketing-step-three" class="continue-button btn btn-primary">Continue</a>
+  <a ui-sref="marketing-step-three" class="continue-button btn btn-primary">Continue to Marketing Budget</a>
 </div>
