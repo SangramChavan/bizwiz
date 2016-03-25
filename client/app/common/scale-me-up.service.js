@@ -49,7 +49,7 @@ function ScaleMeUp(monthScaleStart, seedUsers, pricing, growth, churn, virality,
 
   // fill the next 60 months
   for (var i=monthScaleStart; i < 60; ++i) {
-    var a = nextMonthUsers(users[i-1], users_new[i-1], churn, virality, budget, HR, convertedCAC);
+    var a = nextMonthUsers(users[i-1], users_new[i-2], churn, virality, budget, HR, convertedCAC+0.01*Math.max(0, 12-(i-monthScaleStart)));
     var usersTotal = a[0];
     var usersNewThisMonth = a[1];
 
