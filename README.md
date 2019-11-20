@@ -12,4 +12,4 @@ http://www.slideshare.net/adiramsalem1/bizwiz-60020494
 
 ### Demo
 
-http://adiramsalem.github.io/bizwiz
+https://sangramchavan.github.io/bizwiz/
